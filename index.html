@@ -4,10 +4,98 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>Maximorphs</title>
+    <link rel="stylesheet" href="src/css/fonts.css" />
+    <link rel="stylesheet" href="src/css/preflight.css" />
+    <link rel="stylesheet" href="src/css/vars.css" />
+    <link rel="stylesheet" href="src/css/welcome.css" />
+    <link rel="stylesheet" href="src/css/about.css" />
+    <link rel="stylesheet" href="src/css/history.css" />
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <!-- Header -->
+    <header>
+      <img src="/img/logo.png" alt="logo de maximorphs" />
+      <nav>
+        <ul>
+          <li><a href="#welcome">Inicio</a></li>
+          <li><a href="#about">Conoce más</a></li>
+          <li><a href="#history">Historia</a></li>
+          <li><a href="#discord">Discord</a></li>
+          <li><a href="#videogame">Videojuego</a></li>
+          <li><a href="#donation">Donación</a></li>
+          <li><a href="#pyr">PyR</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Video Background & Buttons -->
+    <section id="welcome">
+      <video class="video-background" autoplay muted loop>
+        <source src="/video/presentation.mp4" type="video/mp4" />
+      </video>
+      <div class="btn-container">
+        <button>
+          <img
+            src="/img/discord.svg"
+            width="20"
+            height="20"
+            alt="icono de discord"
+          />Únete a Discord
+        </button>
+        <button>
+          <img
+            src="/img/play-store.svg"
+            width="20"
+            height="20"
+            alt="icono de discord"
+          />Descarga la Beta
+        </button>
+      </div>
+    </section>
+    <!--  Learn More -->
+    <section id="about">
+      <h2>¿Qué es Maximorphs?</h2>
+      <div class="description-container">
+        <div class="description">
+          <p class="description-paragraph">
+            !Maxi-duelos y muchos mini-juegos! Sumérgete en el maxi-universo, un
+            plano en donde los animales salvajes se han transformado en maximorphs
+            gracias a Gaía, el espíritu de la tierra. Ahora, como Maxi-héroe tienes
+            el deber de adoptar maximorphs para fortalecerlos y librar diferentes
+            aventuras para proteger a la naturaleza y !alcanzar tu máximo poder!
+          </p>
+          <p class="description-paragraph">
+            Conoce todo sobre la aplicación y el maxi-universo. Mira todo nuestro
+            contenido en YouTube y no querrás parar de conocer más y más.
+          </p>
+        </div>
+        <iframe
+          class="youtube-video"
+          src="https://www.youtube.com/embed/hWQYB3UzH_0?autoplay=1&rel=0&controls=1&loop=1&start=0&vq=hd1080"
+          title="Bienvenido a Maximorphs"
+          frameborder="0"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+          allowfullscreen
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+    </section>
+    <!--  History -->
+    <section id="history">
+      <div class="history-description">
+        <h3>
+          Puedes conocer más más sobre la historia de Maximporphs leyendo nuestro
+          webcomic
+        </h3>
+        <button>Ir al web Manga</button>
+      </div>
+      <div class="history-images">
+        <img src="/img/ilust01.jpg" alt="" />
+        <img src="/img/ilust02.jpg" alt="" />
+        <img src="/img/ilust03.jpg" alt="" />
+      </div>
+    </section>
+    <script type="module" src="src/app.ts"></script>
   </body>
 </html>
