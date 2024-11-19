@@ -30,8 +30,29 @@
     </header>
     <!-- Video Background & Buttons -->
     <section id="welcome">
-      <video id="video-background" class="video-background" autoplay muted loop playsinline>
-        <source src="video/video-1080p.webm" type="video/webm">
+      <video
+        id="video-background"
+        class="video-background"
+        autoplay
+        muted
+        loop
+        playsinline
+      >
+        <source
+          src="video/video-480p.webm"
+          type="video/webm"
+          media="(max-width: 640px)"
+        />
+        <source
+          src="video/video-720p.webm"
+          type="video/webm"
+          media="(min-width: 641px) and (max-width: 1024px)"
+        />
+        <source
+          src="video/video-1080p.webm"
+          type="video/webm"
+          media="(min-width: 1025px)"
+        />
       </video>
       <div class="btn-container">
         <button>
