@@ -5,6 +5,21 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maximorphs</title>
+    <link
+      rel="preload"
+      href="src/fonts/Poppins-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="src/fonts/Poppins-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="src/css/fonts.css" />
     <link rel="stylesheet" href="src/css/preflight.css" />
     <link rel="stylesheet" href="src/css/vars.css" />
@@ -15,7 +30,13 @@
   <body>
     <!-- Header -->
     <header>
-      <img src="/img/logo.webp" loading="lazy" alt="logo de maximorphs" />
+      <img
+        src="/img/logo.webp"
+        loading="lazy"
+        width="50px"
+        height="50px"
+        alt="logo de maximorphs"
+      />
       <nav>
         <ul>
           <li><a href="#welcome">Inicio</a></li>
