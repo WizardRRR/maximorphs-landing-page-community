@@ -47,10 +47,11 @@
   width: 100%;
   padding: 3em;
   text-align: center;
-  color: var(--white);
+  color: #383838;
   background-color: var(--yellow);
 
   &:nth-of-type(2) {
+    color: #000;
     background-color: var(--green);
   }
 
