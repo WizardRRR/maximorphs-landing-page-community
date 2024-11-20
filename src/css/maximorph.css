@@ -7,6 +7,7 @@
   gap: 45px;
   background-color: var(--yellow);
 }
+
 .choose-your-maximorphs__title {
   text-align: center;
   font-size: var(--text-2xl);
@@ -16,6 +17,7 @@
     font-size: var(--text-4xl);
   }
 }
+
 .container-grid {
   display: grid;
   grid-template-columns: 200px;
@@ -29,20 +31,24 @@
     grid-template-columns: repeat(4, 200px);
   }
 }
+
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
+
 .card-container-images {
   position: relative;
 }
+
 .card__bg {
   width: 200px;
   height: 200px;
   border-radius: 50%;
 }
+
 .card__img {
   width: 190px;
   height: 190px;
@@ -54,9 +60,11 @@
   margin: auto;
   transition: all 300ms;
 }
+
 .card__img:hover {
   transform: scale(1.16) translate(-15%, -15%);
 }
+
 .card__title {
   font-size: var(--text-2xl);
   color: var(--brow);
