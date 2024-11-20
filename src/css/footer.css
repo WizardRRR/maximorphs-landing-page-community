@@ -1,0 +1,36 @@
+.footer {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.footer__contact {
+  display: flex;
+  gap: 5px;
+  & a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--green);
+    & img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+.footer__policies {
+  & a {
+    color: var(--green);
+  }
+  & p {
+    color: #aaa;
+  }
+}
+.footer__paragraph {
+  font-size: var(--text-sm);
+}

@@ -1,0 +1,63 @@
+.choose-your-maximorphs {
+  padding-top: 40px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+  background-color: var(--yellow);
+}
+.choose-your-maximorphs__title {
+  text-align: center;
+  font-size: var(--text-2xl);
+  font-weight: var(--font-bold);
+  color: var(--brow);
+  @media (width >= 768px) {
+    font-size: var(--text-4xl);
+  }
+}
+.container-grid {
+  display: grid;
+  grid-template-columns: 200px;
+  place-content: center;
+  gap: 40px;
+  @media (width >= 768px) {
+    grid-template-columns: repeat(2, 200px);
+    gap: 80px;
+  }
+  @media (width >= 1024px) {
+    grid-template-columns: repeat(4, 200px);
+  }
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.card-container-images {
+  position: relative;
+}
+.card__bg {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.card__img {
+  width: 190px;
+  height: 190px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  transition: all 300ms;
+}
+.card__img:hover {
+  transform: scale(1.16) translate(-15%, -15%);
+}
+.card__title {
+  font-size: var(--text-2xl);
+  color: var(--brow);
+}
